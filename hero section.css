@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/pushpak-dsilva-2UeBOL7UD34-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(217, 96, 10, 0.314);
+    z-index: 1;
+}
+
+#first-child-header {
+    position: relative;
+    z-index: 2;
+    /* outros estilos */
+}
+
+#second-child-header {
+    position: relative;
+    z-index: 2;
+    /* outros estilos */
+}
+
+
+#second-child-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+    
+}
+
+#second-child-header div a{
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold
+}
+
+.btn-encomendar {
+    background-color: #804015;
+}
+
+.btn-sabores {
+    background-color: 	#ffe4bf;
+}
+
+
+.btn-encomendar:hover {
+    background-color: #804015;
+}
+
+.btn-sabores:hover {
+    background-color: #ffe4bf;
+}   
+
+#about-us-section img{
+    display: block;
+    padding: 50px 0;
+    border: none;
+    border-radius: 15%;
+       
+}
+
+#about-us-section .container {
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    
+}
+
+#text {
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+    color: #804015;
+    font-weight: bold;
+}
+
+#sabores-section {
+    background-color: #ffe4bf;
+    background-position: center;;
+    width: 100vw;
+    height: 100vh;
+    font-weight: bold;
+    color: #804015;
+}
+
+#sabores-section {
+  padding: 80px 0;
+}
+
+.card {
+    height: 500px;              
+    width: 95%;
+    margin: 0 auto; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+
+/* Ajuste de imagem e corpo do card */
+.card .card-img-top {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  display: block;
+}
+
+.card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+/* Em ecrãs pequenos, garantir que o card não ultrapasse a largura */
+@media (max-width: 576px) {
+  .card {
+    max-width: 320px;
+    width: 90%;
+  }
+}
+
+
+.btn-classico {
+    background-color: #804015;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-classico:hover {
+    background-color: #e4bf80;
+    text-decoration: none;
+
+}
+
+
+.btn-noz {
+    background-color: #804015;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-noz:hover {
+    background-color: #e4bf80;
+    text-decoration: none;
+
+}
+
+.btn-caramelo {
+    background-color: #804015;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-caramelo:hover {
+    background-color: #e4bf80;
+    text-decoration: none;
+
+}
+
+#vantagens-section {
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    color: #804015;
+    font-weight: bold;
+}
+
+
+#vantagens-section .card{
+    height: 300px;
+    width: 200px;
+    margin: 0 auto; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe4bf;
+    color: #804015;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}   
+
+#vantagens-section img  {
+    width: 36%;
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: 12px auto 0;
+
+}
+
