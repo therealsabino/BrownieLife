@@ -73,37 +73,11 @@ header {
     background-color: #ffe4bf;
 }   
 
-#about-us-section img{
-    display: block;
-    padding: 50px 0;
-    border: none;
-    border-radius: 15%;
-       
-}
-
-#about-us-section .container {
-    display: flex;
-    padding: 20px;
-    margin: 0;
-    
-}
-
-#text {
-    display: flex;
-    padding: 20px;
-    margin: 0;
-    flex-direction: column;
-    justify-content: center;
-    text-align: end;
-    color: #804015;
-    font-weight: bold;
-}
-
 #sabores-section {
     background-color: #ffe4bf;
     background-position: center;;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     font-weight: bold;
     color: #804015;
 }
@@ -120,6 +94,7 @@ header {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    color: #804015;
     border-radius: 18px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
@@ -142,10 +117,11 @@ header {
 }
 
 /* Em ecrãs pequenos, garantir que o card não ultrapasse a largura */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .card {
     max-width: 320px;
-    width: 90%;
+    width: 100%;
+    flex-direction: column;
   }
 }
 
@@ -201,6 +177,7 @@ header {
     justify-content: center;
     color: #804015;
     font-weight: bold;
+    padding: 80px 0;
 }
 
 
@@ -218,12 +195,55 @@ header {
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }   
 
+#vantagens-section .card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
 #vantagens-section img  {
     width: 36%;
-    max-width: 120px;
     height: auto;
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: 12px auto 0;
+
 
 }
 
+#testemunhos-section {
+    background-color: 	#401500;
+    background-position: center;
+    width: 100vw;
+    height: auto;
+    color: #ffe4bf;
+    text-align: center;
+    font-weight: bold;
+    padding: 80px 0;
+}
+
+#testemunhos-section .card {
+    height: 200px;
+    width: 300px;
+    margin: 0 auto; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #bf8040;
+    color: #ffe4bf;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+#testemunhos-section .card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
