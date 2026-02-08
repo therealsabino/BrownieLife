@@ -1,4 +1,4 @@
-body{
+html, body{
     margin: 0;
     padding: 0;
     font-family: 'Archivo Black', sans-serif;
@@ -227,14 +227,16 @@ header {
 
 #testemunhos-section .card {
     height: 300px;
-    width: 400px;
+    /*width: 300px;*/
     margin: 0 auto; 
+    padding: 80px 0;
     box-sizing: border-box;
-    display: flex;
+    display: block;
     flex-direction: column;
     background-color: #bf8040;
     color: #ffe4bf;
     overflow: hidden;
+    box-sizing: border-box;
     border-radius: 18px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
@@ -257,3 +259,48 @@ header {
     margin: 12px auto 0;
 
 } 
+
+#ctr-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/brownie\ clássico.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay-ctr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(217, 96, 10, 0.314);
+    z-index: 1;
+}
+
+#ctr-section div a{
+    background-color: #804015;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold
+    
+}
+
+#ctr-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#ctr-section {
+    position: relative;
+    z-index: 1;
+}
+
