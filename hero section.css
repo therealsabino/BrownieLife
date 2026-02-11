@@ -350,6 +350,8 @@ header {
 }
 
 footer {
+    width: 100vw;
+    height: auto;
     background-color: #401500;
     color: #ffe4bf;
     text-align: center;
